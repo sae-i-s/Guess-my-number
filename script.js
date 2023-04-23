@@ -45,8 +45,8 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess !== secretNumber) {
     if (score > 1) {
       //document.querySelector('.message').textContent =
-      //guess > secretNumber ? '📈 Too high!' : '📉 Too row!';
-      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too row!');
+      //guess > secretNumber ? '📈 Too high!' : '📉 Too low!';
+      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
       score--;
       document.querySelector('.score').textContent = score;
     } else {
